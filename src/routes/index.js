@@ -14,7 +14,7 @@ function route(app) {
     app.use("/api/v1/book", bookRouter);
     app.use("/api/v1/auth", authRouter);
     app.get("/api/v1/admin_account", (req, res) => {
-        res.json({
+        return res.json({
             admin: {
                 email: "admin@admin.com",
                 password: "123",
