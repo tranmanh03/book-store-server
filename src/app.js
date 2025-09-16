@@ -9,7 +9,7 @@ const route = require("./routes");
 const db = require("./db/database");
 
 dotenv.config();
-const port = process.env.PORT || 6868;
+const port = process.env.PORT || 6969;
 
 app.use(cors({ credentials: true, origin: "*" }));
 cloudinary.config({
